@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,900&family=Roboto:ital,wght@0,500;0,700;1,300;1,900&display=swap');
+body{
+    background-color:rgba(120, 124, 124, 0.685);
+}
+/*  ------------- Home Page  ------------- */
+ /* ------ Navbar styling ------- */
+#navbar{
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    border-style:outset;
+}
+#nav-left{
+    width: 50%;
+}
+#nav-left-details{
+    display: flex;
+    align-items:center;
+    letter-spacing: 2px;
+    width: 15%;
+    position: relative;
+    left: 75px;
+    color: rgb(12, 7, 59);
+}
+#nav-left-details:hover{
+    color: rgb(12, 7, 59);
+    text-shadow: 3px 3px 1px rgb(4, 153, 212);
+    cursor:none;
+}
+#nav-right{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+    letter-spacing: 2px;
+}
+#nav-right a:link{
+    text-decoration: none;
+}
+#nav-right h3{
+    font-size:xx-large ;
+    color: rgb(46, 45, 45);
+    text-shadow: 2px 2px 2px rgb(255, 253, 253);
+}
+#nav-right h3:hover{
+    background-color: rgb(165, 159, 159);
+    border-radius: 10px;
+    padding: 5px;
+    color: rgb(12, 7, 59);
+    text-shadow: 2px 2px 7px rgb(4, 153, 212);
+    box-shadow: 4px 4px 4px rgb(0, 0, 0) ;
+    cursor: pointer;
+}
+#nav-name-first-letter{
+    font-family: 'Kanit', sans-serif;
+    position: relative;
+    left: 5px;
+}
+#nav-name-remaining-letters{
+    position: relative;
+    top: 2px;
+    left: 5px;
+}
+/* ---------------   Home main    -------------------   */
+#main{
+    display: flex;
+    justify-content: space-evenly;
+}
+#main-left-content{
+    padding-left: 50px;
+    padding-top: 150px;
+    line-height: 35px;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+#main-left-content h2,h3{
+    font-size: 25px;
+}
+#main-left-content h2:hover, h3:hover{
+    color: rgb(12, 7, 59);
+    text-shadow: 2px 2px 7px rgb(4, 153, 212);
+    font-size: 30px;
+}
+#main-left-content i{
+    font-size:41px;
+    color:rgb(0, 0, 0) ;
+    text-shadow: -3px 3px 1px rgb(255, 255, 255);
+    background-color: rgba(8, 0, 0, 0.144);
+    padding: 1px;
+    border-radius: 10px;
+}
+#main-left-image{
+    height: 100px;
+    width: 100px;
+}
+#main-left-bottom{
+    display: flex;
+    position: absolute;
+    top: 450px;
+    left: 88px;
+}
+#main-left-cv-down{
+    position: absolute;
+    top: 30px;
+    left: 150px;
+}
+#main-left-cv-down button{
+    background-color: rgb(159, 236, 236);
+    border-radius: 5px;
+    width: 90px;
+    padding:4px;
+    font-weight: bolder;
+    box-shadow: -2px -2px 8px blue;
+}
+#main-left-cv-down button:hover{
+    background-color: rgb(19, 153, 206);
+    color: rgb(254, 255, 200);
+    width: 95px;
+    padding:5px;
+    box-shadow: -2px -2px 6px rgb(0, 6, 83);
+}
+#main-right-image{
+    position: relative;
+    top: 67px;
+    height: 500px;
+    width: 700px;
+}
+#main-bg-name{
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    font-size: 100px;
+    z-index: -1;
+    color: rgba(156, 153, 153, 0.527);
+    word-spacing: 20px;
+    text-shadow: 3px 3px 10px rgb(255, 255, 255);
+}
+
+/*  ---------------  About Page --------------------  */
+#about-background-img{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+/*  ---------------  Skills Page --------------------  */
+#front-end{
+    display: flex;
+    gap: 40px;
+}
+#Back-End{
+    display: flex;
+    gap: 40px;
+}
+
+
+
+
+
+
+
+
