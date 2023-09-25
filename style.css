@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,900&family=Roboto:ital,wght@0,500;0,700;1,300;1,900&display=swap');
 body{
-    background-color:rgba(120, 124, 124, 0.685);
+    background-color:rgba(0, 0, 0, 0.5);
 }
 /*  ------------- Home Page  ------------- */
  /* ------ Navbar styling ------- */
@@ -8,7 +8,11 @@ body{
     display: flex;
     flex-direction: row;
     height: 70px;
-    border-style:outset;
+    background-color: rgba(156, 163, 163, 0.6);
+    border: 2px solid rgba(0, 0, 0, 0.438);
+    border-radius:15px;
+    position: relative;
+    top: 10px;
 }
 #nav-left{
     width: 50%;
@@ -21,11 +25,42 @@ body{
     position: relative;
     left: 75px;
     color: rgb(12, 7, 59);
+    animation-name: logo;
+    animation-duration: 15s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
 }
-#nav-left-details:hover{
-    color: rgb(12, 7, 59);
-    text-shadow: 3px 3px 1px rgb(4, 153, 212);
+#nav-left-log{
+    font-size:35px;
+}
+@keyframes logo{
+    0%{
+    color: rgb(251, 255, 9);
+    text-shadow: 3px 3px 1px rgb(255, 5, 5);
     cursor:none;
+    }
+    25%{
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 1px rgb(0, 0, 0);
+    cursor:none;
+    }
+    50%{
+        color: rgb(251, 255, 9);
+        text-shadow: 3px 3px 1px rgb(255, 5, 5);
+        cursor:none;
+    }
+    75%{
+        color: rgb(0, 0, 0);
+        text-shadow: 3px 3px 1px rgb(255, 255, 255);
+        cursor:none;
+        }
+    100%{
+        color: rgb(251, 255, 9);
+        text-shadow: 3px 3px 1px rgb(255, 5, 5);
+        cursor:none;
+    }
 }
 #nav-right{
     display: flex;
@@ -43,12 +78,13 @@ body{
     text-shadow: 2px 2px 2px rgb(255, 253, 253);
 }
 #nav-right h3:hover{
-    background-color: rgb(165, 159, 159);
-    border-radius: 10px;
-    padding: 5px;
+    background-color: rgb(6, 188, 243);
+    border-radius: 25px;
+    border: 1px solid darkblue;
+    padding: 0px 10px 0px 10px;
     color: rgb(12, 7, 59);
-    text-shadow: 2px 2px 7px rgb(4, 153, 212);
-    box-shadow: 4px 4px 4px rgb(0, 0, 0) ;
+    text-shadow: 2px 2px 1px rgb(255, 255, 255);
+    box-shadow: 7px 7px 4px rgb(0, 0, 0) ;
     cursor: pointer;
 }
 #nav-name-first-letter{
